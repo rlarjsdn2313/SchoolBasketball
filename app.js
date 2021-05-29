@@ -1,14 +1,18 @@
 const express = require("express");
 const app = express();
 
-const fs = require("fs");
+const favicon = require("serve-favicon");
 
-const Format = require('./lib/format');
+const fs = require("fs");
+const path = require("path");
+
+const Format = require("./lib/format");
 
 const port = 3000;
 const data = "./data/";
 
 app.set("view engine", "ejs");
+app.use(favicon(path.join(__dirname, 'favicon.ico')));
 
 const CheckFile = (num) => {
     let fileList = GetFileList();
@@ -74,4 +78,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running(port:${port})`);
 });
-
