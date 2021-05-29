@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 농구</title>
+</head>
+<body>
+    <div class="header">
+        학교 농구
+    </div>
+
+    <div class="wrapper">
+        <%- matches %>
+    </div>
+
+    <footer>
+        made by Dev07
+    </footer>
+</body>
+<style>
+
+
+    @font-face {
+        font-family: 'GmarketSansMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+    html, body {
+        overflow-x: hidden;
+        height: 100%;
+
+        background-color: #e1eef6;
+        margin: 0;
+        padding: 0;
+
+        font-family: "GmarketSansMedium";
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        text-align: center;
+        line-height: 60px;
+        background-color: #e7714e;
+    }
+
+    .wrapper {
+        padding: 30px;
+    }
+
+    .match {
+        margin: 0 auto;
+        width: 70%;
+        max-width: 500px;
+        background: #fcbe32;
+
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+
+        color: #004e66;
+        text-align: center;
+    }
+
+    .date {
+        text-align: center;
+    }
+
+    .win, .lose, .same1, .same2 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .win, .same1 {
+        float: left;
+    }
+
+    .lose, .same2 {
+        float: right;
+    }
+
+    .MVP {
+        display: inline-block;
+        width: 100%;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 40px;
+        text-align: center;
+
+        line-height: 39px;
+        background-color: #004e66;
+        color: #e1eef6;
+
+    }
+
+</style>
+</html>
