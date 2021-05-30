@@ -1,6 +1,6 @@
 {
     "Date" : "5월 29일(토)",
-    "Score" : [["Second", 51], ["First", 50]],
-    "MVP" : "김건우",
+    "Score" : [["Version", "1.0"], ["배포", "20210529"]],
+    "MVP" : "Dev07",
     "Error" : false
 }
